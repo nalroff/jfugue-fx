@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="jfugue-fx_main" target="1.8" />
+      <module name="jfugue-fx_test" target="1.8" />
+      <module name="sounder_main" target="1.8" />
+      <module name="sounder_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

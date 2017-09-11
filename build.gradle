@@ -1,0 +1,47 @@
+group 'solutions.mckee'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.1.4-3'
+    ext.tornado_version = '1.7.10'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "no.tornado:tornadofx:$tornado_version"
+    compile files("lib/jfugue-5.0.9.jar")
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.1'
+}
+jar {
+    from {
+        (configurations.runtime).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    manifest {
+        attributes("Main-Class": "solutions.mckee.jfuguefx.JFugueFXApp" )
+    }
+}

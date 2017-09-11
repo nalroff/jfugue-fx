@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfugue-fx.iml" filepath="$PROJECT_DIR$/.idea/modules/jfugue-fx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfugue-fx_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jfugue-fx_main.iml" group="jfugue-fx" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfugue-fx_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jfugue-fx_test.iml" group="jfugue-fx" />
+    </modules>
+  </component>
+</project>
